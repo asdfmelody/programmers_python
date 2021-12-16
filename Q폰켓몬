@@ -1,0 +1,13 @@
+nums=[3,3,3,2,2,2]
+
+
+def solution(nums):
+    sets = set(nums)
+    take_len = len(nums) // 2  # 가져갈 수 있는 개수
+    set_len = len(sets)  # 총 종류개수
+
+    if take_len < set_len:
+        return take_len
+    else:
+        return set_len
+print(solution(nums))
